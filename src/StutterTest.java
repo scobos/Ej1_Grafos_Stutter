@@ -63,7 +63,8 @@ public class StutterTest {
     }
     
 
-
+    //modifico el test y creo un archivo con hola ya que este test prueba con un fichero y no
+    // con la entrada como el resto de test
     
     @Test
     public void testFromFile() {
@@ -72,7 +73,7 @@ public class StutterTest {
         } catch (IOException e) {
             fail(e.getMessage());
         }
-        assertEquals("Repeated word on line 2: word word\n", outContent.toString());
+        assertEquals("Repeated word on line 2: hola hola\n", outContent.toString());
 }
     
     @Test
